@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<head>
+		<link href="style.css" rel="stylesheet"/>
+		<script src="jquery-2.1.1.min.js"></script>
+		<script src="script.js"></script>
+		<script>
+		</script>
+	</head>
+	<body>
+		<div id="tab">
+			<a href="#log1" id="login" >Log in</a>
+			<a href="#log2" id="signup">Sign up</a>
+			<div id="line"></div>
+			<div id="l1"></div>
+			<div id="l2"></div>
+			<div id="log">	
+				<form action="login" method="get">
+					<h3 id="email_n">Email:</h3><input type="text" name="email" id="email" autocomplete="off"/>
+					<h3 id="pwd_n">Password:</h3><input type="password" name="pwd" id="pwd"autocomplete="off"/>
+					<input type="submit" id="sub" value="Log in"/>
+				</form>
+			</div>
+			<div id="sign">	
+				<form action="signup" method="GET" id="signing">
+					<h3 id="uname_n" >Username:</h3>
+					<input type="text" name="uname" id="uname" autocomplete="off"/>
+					<h3 id="uname-div" class="alert">*Invalid username</h3>
+					<h3 id="email_n1">Email:</h3>
+					<input type="text" name="email1" id="email1" autocomplete="off"/>
+					<h3 id="email-id" class="alert">*Invalid email id</h3>
+					<h3 id="remail_n">Re-enter email:</h3>
+					<input type="text" name="remail" id="remail" autocomplete="off"/>
+					<h3 id="email-div" class="alert">*Email ids do not match</h3>
+					<h3 id="pwd_n1">Password:</h3>
+					<input type="password" name="pwd1" id="pwd1"autocomplete="off"/>
+					<h3 id="pass-short" class="alert">*Password too short</h3>
+					<h3 id="name_n">Full Name:</h3>
+					<input type="text" name="fname" id="fname" autocomplete="off"/>
+					<h3 id="fname-div" class="alert">*Invalid name</h3>
+					<input type="checkbox" name="terms" id="term" value="terms"><h3 id="term_t">I agree to the Ewagon's Terms and Conditions</h3>
+					<input type="submit" id="sub1" value="Sign up"/>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
